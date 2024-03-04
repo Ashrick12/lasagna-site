@@ -1,4 +1,5 @@
 from flask import Flask, request, render_template
+import csv
 
 app = Flask(__name__)
 
@@ -9,9 +10,9 @@ def index():
         try:
             like = request.form.get('like')
             name = request.form.get('name')
-            opinion = (name, like)
-            with open('opinions.txt', 'a') as f:
-                f.write(f'\n{opinion}')
+            frozen = request.form.get('frozen')
+            with open('opinions.csv', 'a') as f:
+                f.write(f'\n{name},{like},{frozen}')
         except:
             print('Error Occured, probably fine.')
     return render_template('index.html')

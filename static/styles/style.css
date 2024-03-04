@@ -4,6 +4,8 @@ html {
    margin-right: 25%;
    border-left: red 2px solid;
    border-right: red 2px solid;
+   border-bottom: red 2px solid;
+   border-top: red 2px solid;
 }
 
 body {
