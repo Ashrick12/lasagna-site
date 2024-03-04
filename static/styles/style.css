@@ -1,0 +1,19 @@
+html {
+   min-height: 100%;
+   margin-left: 25%;
+   margin-right: 25%;
+   border-left: red 2px solid;
+   border-right: red 2px solid;
+}
+
+body {
+   background-color: #333;
+   color: red;
+   font-family: monospace;
+   font-size: 1.25rem;
+   margin: 10%;
+}
+
+figure {
+   margin: auto;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=0.6" />
+      <link
+         rel="stylesheet"
+         href=" {{url_for('static', filename='styles/style.css')}}"
+      />
+      <title>Lasagna</title>
+   </head>
+   <body>
+      <h1>Lasagna</h1>
+      <p>I like lasagna. Not love it, but I like it. It's pretty good.</p>
+      <figure>
+         <img
+            src="https://www.modernhoney.com/wp-content/uploads/2019/08/Classic-Lasagna-14-scaled.jpg"
+            alt="Lasagna plated up"
+            width="200"
+         />
+      </figure>
+      <br />
+      <form method="post">
+         <fieldset>
+            <legend>Do you like lasagna?</legend>
+            <p>
+               <input
+                  type="radio"
+                  name="like"
+                  id="yes"
+                  value="yes"
+                  required
+               /><label for="yes">Yes</label>
+               <input
+                  type="radio"
+                  name="like"
+                  id="no"
+                  value="no"
+                  required
+               /><label for="no">No</label>
+            </p>
+            <p>
+               <label for="name">Name:</label>
+               <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="your name"
+                  required
+                  autocomplete="off"
+               />
+            </p>
+         </fieldset>
+         <button type="submit">Submit</button>
+         <button type="reset">Reset</button>
+      </form>
+   </body>
+</html>
